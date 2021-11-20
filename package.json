@@ -7,11 +7,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "ra-data-json-server": "^3.19.1",
+    "@types/react-transition-group": "^4.4.4",
     "react": "^17.0.2",
-    "react-admin": "^3.19.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "npx eslint src/**/*.ts src/**/*.tsx",
-    "lint and fix": "npx eslint src/**/*.ts src/**/*.tsx --fix",
+    "lint-and-fix": "npx eslint src/**/*.ts src/**/*.tsx --fix",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },
@@ -48,7 +48,7 @@
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^8.2.0",
+    "eslint": "^7.11.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-config-airbnb-typescript": "^16.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -64,7 +64,7 @@
   },
   "lint-staged": {
     "*.{ts, tsx}": [
-      "eslint --cache --fix",
+      "yarn run lint",
       "prettier --write",
       "git add"
     ]
