@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.color-block-enter {
+  opacity: 0;
+}
+.color-block-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.color-block-exit {
+  opacity: 1;
+}
+.color-block-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
